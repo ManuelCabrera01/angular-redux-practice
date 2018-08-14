@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { User } from "./address-card/user.model";
 
 @Component({
   selector: "app-root",
@@ -6,5 +7,12 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "angular, redux APP";
+  user: User;
+  constructor() {
+    this.user = new User();
+    (this.user.name = " blah blahmirez"),
+      (this.user.tittle = "software Enginireer"),
+      (this.user.address = " 1234 main st, city state 12345"),
+      (this.user.phone = ["1234 123 1234", "567 56775677"]);
+  }
 }

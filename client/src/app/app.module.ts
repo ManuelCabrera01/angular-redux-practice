@@ -5,13 +5,15 @@ import { AppComponent } from "./app.component";
 import { ChildComponent } from "./child/child.component";
 import { DateComponent } from "./date/date.component";
 import { AddressCardComponent } from "./address-card/address-card.component";
+import { ThirdComponent } from './third/third.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
     DateComponent,
-    AddressCardComponent
+    AddressCardComponent,
+    ThirdComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

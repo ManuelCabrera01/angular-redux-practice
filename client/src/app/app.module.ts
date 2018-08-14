@@ -1,10 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { ChildComponent } from './child/child.component';
-import { DateComponent } from './date/date.component';
-import { AddressCardComponent } from './address-card/address-card.component';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { AppComponent } from "./app.component";
+import { ChildComponent } from "./child/child.component";
+import { DateComponent } from "./date/date.component";
+import { AddressCardComponent } from "./address-card/address-card.component";
 
 @NgModule({
   declarations: [
@@ -13,10 +13,8 @@ import { AddressCardComponent } from './address-card/address-card.component';
     DateComponent,
     AddressCardComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

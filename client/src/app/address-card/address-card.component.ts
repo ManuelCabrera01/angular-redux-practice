@@ -6,6 +6,8 @@ import { User } from "./user.model";
   styleUrls: ["./address-card.component.css"]
 })
 export class AddressCardComponent implements OnInit {
+  isCollapsed: boolean = true;
+
   //setting the input value(hardcode / not efitient)
   // @Input("name")
   // userName: string;
@@ -16,6 +18,10 @@ export class AddressCardComponent implements OnInit {
   user: User;
 
   constructor() {}
+
+  toggleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 
   ngOnInit() {}
 }

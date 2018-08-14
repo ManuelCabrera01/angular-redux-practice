@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
 import { DateComponent } from './date/date.component';
+import { AddressCardComponent } from './address-card/address-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
-    DateComponent
+    DateComponent,
+    AddressCardComponent
   ],
   imports: [
     BrowserModule
